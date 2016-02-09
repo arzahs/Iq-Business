@@ -3,48 +3,156 @@
 <head>
   <meta charset="UTF-8">
   <title>Iq business</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <header>
   <h2>IQ BUSINESS</h2>
+<nav class="main-navigation">
   <ul>
-    <li class="home"><a href="#">Home</a></li>
+    <li class="active"><a href="#">Home</a></li>
     <li><a href="#">Started</a></li>
     <li><a href="#">FAQs</a></li>
     <li><a href="#">Wrappers</a></li>
     <li><a href="#">News Feeds</a></li>
     <li><a href="#">Contacts</a></li>
   </ul>
+</nav>
   <div class="search">
+<form action="#">
     <input type="text">
     <input type="button">
+</form>
   </div>
   </header>
-
-  <div class="main-menu">
+  <section class="container">
+    <div class="main-menu">
+      <ul>
+        <li><a href="#">Mambo license</a></li>
+        <li><a href="#">Getting started</a></li>
+        <li><a href="#">News feeds</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Wrappers</a></li>
+        <li><a href="#">Links</a></li>
+        <li><a href="#">Latest news</a></li>
+      </ul>
+    </div>
+    <div class="image">
+      <img src="img/baba.gif" alt="">
+    </div>
+    <div class="login-form">
+      <form action="#">
+        <label for="username">Username</label>
+        <input type="text" name="username">
+        <label for="password">password</label>
+        <input type="password" name="password">
+        <label for="remember"></label>
+        <input type="checkbox" name="remember">
+        <input type="button" class = "btn" value="login">
+      </form>
+    </div>
+</section>
+  <div class="controls">
     <ul>
-      <li><a href="#">Mambo license</a></li>
-      <li><a href="#">Getting started</a></li>
-      <li><a href="#">News feeds</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Wrappers</a></li>
-      <li><a href="#">Links</a></li>
-      <li><a href="#">Latest news</a></li>
+      <li>Home</li>
+      <li>Features</li>
+      <li>Services</li>
     </ul>
   </div>
-  <div class="image">
-    <img src="baba.dif" alt="">
-  </div>
-  <div class="login-form">
-    <form action="#">
-      <label for="username">Username</label>
-      <input type="text" name="username">
-      <label for="password">password</label>
-      <input type="password" name="password">
-      <label for="remember"></label>
-      <input type="checkbox" name="remember">
-      <input type="button">
-    </form>
-  </div>
+
+  <section class="container">
+    <div class="column-left">
+
+      <div class="column-popular">
+        <p>Popular</p>
+        <ul>
+          <li>Lorem ipsum dolor met</li>
+          <li>Consectetuer adipiscing</li>
+          <li>Preasent vestibulum</li>
+          <li>Aenean nonume hendrerit</li>
+          <li>Phasels porta fusce susit</li>
+          <li>Cum snatoqe penaibus</li>
+          <li>Magnis disturet montes</li>
+        </ul>
+      </div>
+
+      <div class="column-latest">
+        <p>Latest News</p>
+        <ul>
+          <li><a href="#">Consectetuer adipiscing praesent vestibulum.</a></li>
+          <li><a href="#">Fusce feuat malesuda odio Morbi nunc odio gravia.</a></li>
+          <li><a href="#">Cursus nec, lustus sntoqe penaibus magnis disturet montes</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="column-center">
+      <h3>Welcome to our company</h3>
+      <p class="author">Written by Administrator<br>Friday, 29 August 2008</p>
+      <p class="column-center-information">
+        Arturient montes nascetur ridiculus duseugiat malesuda odiounc
+        odiva ates cursushec luctus alorem amet maece nas tristique orci
+        arcsem. Donec accumsan maleda orci donec sit amet eros. lorem
+        ipsum dolor sit amet consectetuer adipiscing elitauris.
+      </p>
+      <div class="column-center-item">
+        <p class="column-center-title">
+          Arturient montes nascetur
+        </p>
+        <p class="column-center-article">
+          ridiculus deseug malesuda odionc odiva ates sit cursusnec luctus alorem amet maece.
+          Nas tristique orci acsem accumsan.
+        </p>
+      </div>
+      <div class="column-center-item">
+        <p class="column-center-title">
+          Utes sit cursusnec luctus
+        </p>
+        <p class="column-center-article">
+          ridiculus deseug malesuda odionc odiva ates sit cursusnec luctus alorem amet maece.
+          Nas tristique orci acsem accumsan.
+        </p>
+      </div>
+
+      <div class="column-center-footer">
+        <a href="#" class="btn">Read more</a>
+        <p>Last Updated(Saturday, 13 September 2008)</p>
+      </div>
+    </div>
+
+    <div class="column-right">
+      <div class="column-right-online">
+        <h3>Who`s Online:</h3>
+        <p class="online">
+          We have 2 guests online
+        </p>
+      </div>
+
+      <div class="column-right-polls">
+        <h3>Polls</h3>
+        <p class="vote">This Joomla! Installation was...</p>
+
+        <input type="radio" name="vote" value="Abcolutely simple">
+        Abcolutely simple<br>
+        <input type="radio" name="vote" value="Reasonably easy">
+        Reasonably easy<br>
+        <input type="radio" name="vote" value="Not straight-forward but I worked it out">
+         Not straight-forward but I worked it out<br>
+        <input type="radio" name="vote" value="I had to install extra server stuff">
+        I had to install extra server stuff<br>
+        <input type="radio" name="vote" value="I had no idea and got my friend to do it">
+        I had no idea and got my friend to do it<br>
+        <input type="radio" name="vote" value="My dog run away with README...">
+        My dog run away with README...<br>
+        <input type="button" class="btn" value="Vote">
+        <input type="button" class="btn" value="Results">
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>Powered by Joomla!</p>
+  </footer>
 </body>
 </html>
