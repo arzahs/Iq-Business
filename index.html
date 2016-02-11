@@ -6,8 +6,11 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div class="content">
   <header>
-  <h2>IQ BUSINESS</h2>
+<div class="logo">
+  <img src="img/Logo.gif" alt="">
+</div>
 <nav class="main-navigation">
   <ul>
     <li class="active"><a href="#">Home</a></li>
@@ -20,13 +23,16 @@
 </nav>
   <div class="search">
 <form action="#">
-    <input type="text">
-    <input type="button">
+
+    <input type="text" placeholder="Search">
+    <button type="button" name="button" class="btn btn-search">Go</button>
 </form>
   </div>
   </header>
+  <div class="blue-line"></div>
   <section class="container">
     <div class="main-menu">
+      <p>Main Menu:</p>
       <ul>
         <li><a href="#">Mambo license</a></li>
         <li><a href="#">Getting started</a></li>
@@ -38,25 +44,34 @@
       </ul>
     </div>
     <div class="image">
-      <img src="img/baba.gif" alt="">
+      <img src="img/girl2.gif" alt="">
     </div>
     <div class="login-form">
-      <form action="#">
+      <p>Login Form:</p>
+      <form action="#" method="post">
         <label for="username">Username</label>
         <input type="text" name="username">
-        <label for="password">password</label>
+        <br>
+        <label for="password">Password</label>
         <input type="password" name="password">
-        <label for="remember"></label>
-        <input type="checkbox" name="remember">
-        <input type="button" class = "btn" value="login">
+        <div class="row">
+        <div class="remember">
+          <input type="checkbox" name="remember">
+          <span>Remember me</span>
+        </div>
+        <button class="btn">Login</butt on>
+        </div>
+        <span class="lost-password">Lost password<br></span>
+        <span class="no-account">account yet?</span>
+        <a href="#" class="register">Register</a>
       </form>
     </div>
 </section>
   <div class="controls">
     <ul>
-      <li>Home</li>
-      <li>Features</li>
-      <li>Services</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Services</a></li>
     </ul>
   </div>
 
@@ -66,13 +81,13 @@
       <div class="column-popular">
         <p>Popular</p>
         <ul>
-          <li>Lorem ipsum dolor met</li>
-          <li>Consectetuer adipiscing</li>
-          <li>Preasent vestibulum</li>
-          <li>Aenean nonume hendrerit</li>
-          <li>Phasels porta fusce susit</li>
-          <li>Cum snatoqe penaibus</li>
-          <li>Magnis disturet montes</li>
+          <li><a href="#">Lorem ipsum dolor met</a></li>
+          <li><a href="#">Consectetuer adipiscing</a></li>
+          <li><a href="#">Preasent vestibulum</a></li>
+          <li><a href="#">Aenean nonume hendrerit</a></li>
+          <li><a href="#">Phasels porta fusce susit</a></li>
+          <li><a href="#">Cum snatoqe penaibus</a></li>
+          <li><a href="#">Magnis disturet montes</a></li>
         </ul>
       </div>
 
@@ -88,7 +103,9 @@
     </div>
 
     <div class="column-center">
+      <a href="" class="elements"><img src="img/pdf.gif" alt=""></a>
       <h3>Welcome to our company</h3>
+
       <p class="author">Written by Administrator<br>Friday, 29 August 2008</p>
       <p class="column-center-information">
         Arturient montes nascetur ridiculus duseugiat malesuda odiounc
@@ -97,22 +114,29 @@
         ipsum dolor sit amet consectetuer adipiscing elitauris.
       </p>
       <div class="column-center-item">
-        <p class="column-center-title">
-          Arturient montes nascetur
-        </p>
-        <p class="column-center-article">
-          ridiculus deseug malesuda odionc odiva ates sit cursusnec luctus alorem amet maece.
-          Nas tristique orci acsem accumsan.
-        </p>
+        <img src="img/Notebook.gif" alt="">
+        <div class="column-center-item-text">
+          <p class="column-center-title">
+            <a href="#">Arturient montes nascetur</a>
+          </p>
+          <p class="column-center-article">
+            ridiculus deseug malesuda odionc odiva ates sit cursusnec luctus alorem amet maece.
+            Nas tristique orci acsem accumsan.
+          </p>
+        </div>
       </div>
+
       <div class="column-center-item">
-        <p class="column-center-title">
-          Utes sit cursusnec luctus
-        </p>
-        <p class="column-center-article">
-          ridiculus deseug malesuda odionc odiva ates sit cursusnec luctus alorem amet maece.
-          Nas tristique orci acsem accumsan.
-        </p>
+        <img src="img/Men2.gif" alt="">
+        <div class="column-center-item-text">
+          <p class="column-center-title">
+            <a href="#">Utes sit cursusnec luctus</a>
+          </p>
+          <p class="column-center-article">
+            ridiculus deseug malesuda odionc odiva ates sit cursusnec luctus alorem amet maece.
+            Nas tristique orci acsem accumsan.
+          </p>
+        </div>
       </div>
 
       <div class="column-center-footer">
@@ -124,35 +148,54 @@
     <div class="column-right">
       <div class="column-right-online">
         <h3>Who`s Online:</h3>
-        <p class="online">
-          We have 2 guests online
+        <p>
+          We have <a href="#">2 guests</a> online
         </p>
       </div>
 
       <div class="column-right-polls">
         <h3>Polls</h3>
-        <p class="vote">This Joomla! Installation was...</p>
+        <p class="vote">This Joomla! Installation<br> was...</p>
+        <div class="poll-item">
+          <input type="radio" name="vote" value="Abcolutely simple">
+          <span>Abcolutely simple<br></span>
+        </div>
 
-        <input type="radio" name="vote" value="Abcolutely simple">
-        Abcolutely simple<br>
+        <div class="poll-item"></div>
         <input type="radio" name="vote" value="Reasonably easy">
-        Reasonably easy<br>
-        <input type="radio" name="vote" value="Not straight-forward but I worked it out">
-         Not straight-forward but I worked it out<br>
-        <input type="radio" name="vote" value="I had to install extra server stuff">
-        I had to install extra server stuff<br>
-        <input type="radio" name="vote" value="I had no idea and got my friend to do it">
-        I had no idea and got my friend to do it<br>
-        <input type="radio" name="vote" value="My dog run away with README...">
-        My dog run away with README...<br>
-        <input type="button" class="btn" value="Vote">
-        <input type="button" class="btn" value="Results">
+        <span>Reasonably easy</span>
+        <div class="poll-item">
+          <input type="radio" name="vote" value="Not straight-forward but I worked it out">
+           <span>Not straight-forward but I worked it out<br></span>
+        </div>
+
+        <div class="poll-item">
+          <input type="radio" name="vote" value="I had to install extra server stuff">
+          <span>I had to install extra server stuff<br></span>
+        </div>
+
+        <div class="poll-item">
+          <input type="radio" name="vote" value="I had no idea and got my friend to do it">
+          <span>I had no idea and got my friend to do it<br></span>
+        </div>
+
+        <div class="poll-item">
+          <input type="radio" name="vote" value="My dog run away with README...">
+          <span>My dog run away with README...<br></span>
+        </div>
+
+
+        <button type="button" class="btn" name="Vote">Vote</button>
+        <button type="button" class="btn" name="Results">Results</button>
+
 
       </div>
     </div>
   </section>
+  <div class="dark-blue-line"></div>
   <footer>
     <p>Powered by Joomla!</p>
   </footer>
+  </div>
 </body>
 </html>
