@@ -675,9 +675,9 @@ header:after{
 .column-right-polls h3:before{
   content: "";
   position: absolute;
-  width: 19px;
+  width: 21px;
   height: 20px;
-  background: url(../img/info1.gif);
+  background: url(../img/info2.gif);
   top: -3px;
   left: -3px;
 
